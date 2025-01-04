@@ -49,6 +49,9 @@ class AppComoComponenteDeClase extends Component {
 
     //no se puede utilizar solo return, se debe usar el metodo render()
     render() {
+        //logs para ver que va ocurriendo en todo este flujo
+        console.log("Ejecutando el render");
+        console.log(this.state.info);        
         return (
             <div>
                 <h1>Componente de Clase App</h1>
