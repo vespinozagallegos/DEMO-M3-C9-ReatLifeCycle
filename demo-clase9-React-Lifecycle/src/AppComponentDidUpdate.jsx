@@ -35,17 +35,25 @@ class AppComponentDidMount2 extends Component {
         }, 3000)
     }
 
+    componentDidUpdate() {
+        console.log("Ejecutando el componentDidUpdate");
+    }
+
     render() {
         //logs para ver que va ocurriendo en todo este flujo
         console.log("Ejecutando el render");
         console.log(this.state.info);
         return (
             <div>
-                <h1>Componente de Clase App</h1>
-                {/* muestra la informacion que esta en state(objeto). Se usa this por ser clase */}
-                <h2>{this.state.info}</h2>
-                {/* Luego se agregará una funcionalidad al botón */}
-                <button>Iniciar Sesión</button>
+                {
+                    // Si session está en true, muestra el h2
+                    this.state.session ? (
+                        <h2>Estás conectado!😁</h2>
+                    // caso contrario, muestra
+                    ) : (
+                        <h2>Aún no haz iniciado sesión 😴</h2>
+                    )
+                }
             </div>
         )
     }
