@@ -1,0 +1,9 @@
+Método ComponentDidMount.
+AppComponentDidMount Es una forma de trabajar con el Método ComponentDidMount().
+ComponentDidMount:Es una función que se ejecuta una sola vez cuando se carga el componente que sería
+la primera vez que se muestra en pantalla.
+
+Método de Actualización
+componentDidUpdate(). Se ejecuta cada vez que se actualiza el componente.
+
+Método de Desmontaje
