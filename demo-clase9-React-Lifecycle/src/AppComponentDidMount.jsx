@@ -13,7 +13,7 @@ console.log(styles);
 const user = "Víctor";
 
 //Forma 2
-class AppComoComponenteDeClase extends Component {
+class AppComponentDidMount extends Component {
     //Se reciben props //Se define el Estado //Se define todo lo inicial que necesita el componente para renderizar
     constructor() {
         //super no es necesario si no recibo props pero si se recomienda ponerlo siempre para evitar errores finales 
@@ -64,4 +64,4 @@ class AppComoComponenteDeClase extends Component {
     }
 }
 
-export default AppComoComponenteDeClase;
+export default AppComponentDidMount;
