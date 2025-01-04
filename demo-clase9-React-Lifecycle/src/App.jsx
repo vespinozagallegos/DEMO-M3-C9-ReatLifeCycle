@@ -1,5 +1,7 @@
 // import { useState } from 'react'
 import styles from './App.module.css'
+import Saludo from './Components/ComponenteDeClase';
+
 console.log(styles);
 
 function App() {
@@ -8,6 +10,7 @@ function App() {
   return (
     <div>
       <h1>HOLA</h1>
+      <Saludo/>
     </div>
     
   );

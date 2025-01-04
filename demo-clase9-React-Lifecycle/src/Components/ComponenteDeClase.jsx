@@ -6,6 +6,9 @@
 import React, { Component } from "react";
 
 class Saludo extends Component {
+    // Al ser una clase y no una función no podremos retornar ningún valor.
+    // Por lo que la forma de renderizar algo es utilizando el método render que también viene predefinido.
+    // Dentro de el, si podremos retornar un valor que será el contenido JSX que queramos mostrar en pantalla.
     render() {
         return (
             <div>
