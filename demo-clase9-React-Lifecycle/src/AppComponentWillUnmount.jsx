@@ -39,6 +39,10 @@ class AppComponentDidMount3 extends Component {
         console.log("Ejecutando el componentDidUpdate");
     }
 
+    componentWillUnmount() {
+        console.log("Ejecutando el componentWillUnmount");        
+    }
+
     render() {
         //logs para ver que va ocurriendo en todo este flujo
         console.log("Ejecutando el render");

@@ -4,6 +4,21 @@ ComponentDidMount:Es una función que se ejecuta una sola vez cuando se carga el
 la primera vez que se muestra en pantalla.
 
 Método de Actualización
-componentDidUpdate(). Se ejecuta cada vez que se actualiza el componente.
+componentDidUpdate(). Se ejecuta cada vez que SE ACTUALIZA el componente.
 
-Método de Desmontaje
+Método de Desmontaje (TIENE MAS SENTIDO CUANDO SE APLICA ROUTER, MAS ADELANTE)
+componentWillUnmount().
+Se ejecuta cuando el componente se desmonta, es decir,
+cuando se deja de ver en pantalla.
+Cuando una pantalla sale de la app o se sale de la pantalla específica.
+Por ej:
+Si hago una solicitud a la API para traer info y mostrarla en la página;
+Esa info se muestra cuando el componente se monte (renderizado por primera vez)
+Si el usuario se va de la pagina/de esta vista.
+El componente se desmonta y
+Se limpia el estado que tiene esa info de la API, para no consumir recursos innecesarios.
+POR LO TANTO
+si el usuario vuelve a entrar a esa vista
+se hace el llamado a la API nuevamente
+se trae la info
+y se muestra.
