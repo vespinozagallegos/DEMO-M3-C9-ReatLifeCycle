@@ -26,6 +26,27 @@ class AppComoComponenteDeClase extends Component {
         console.log("Ejecutando el constructor");        
     }
 
+    //*Para ver que sucede cuando SE MONTA el COMPONENTE
+    // Permite ejecutar ciertas cosas al momento en que se carga el componente en pantalla
+    //Se ejecuta UNA SOLA VEZ, cuando se monta el COMPONENTE (primera vez en pantalla)
+    //*Es útil para mostrar algo "por mientras", por ej., un loading mientras se recarga lo demás.
+    componentDidMount() {
+        //Para saber en que momento se van ejecutando las partes de este comp.
+        console.log("Ejecutando el componenteDidMount");
+
+        //Sólo para ver como funciona esto
+        // setTimeout ejecuta lo que esta dentro a los 3 segundos (3000 del final) luego de ejecutarse componentDidMount()
+        setTimeout(() => {
+            //*Actualiza el estado
+            this.setState({
+                session: true,
+                info: `Bienvenido ${user}`
+            })
+        }, 3000)
+        
+
+    }
+
     //no se puede utilizar solo return, se debe usar el metodo render()
     render() {
         return (
