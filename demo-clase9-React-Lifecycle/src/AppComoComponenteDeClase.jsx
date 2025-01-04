@@ -23,7 +23,7 @@ class AppComoComponenteDeClase extends Component {
             session: false,
             info: "No se ha cargado la info"
         }
-        console.log("Ejecutando el constructor");        
+        console.log("Ejecutando el constructor");      //! PRIMERO se ejecuta el constructor 
     }
 
     //*Para ver que sucede cuando SE MONTA el COMPONENTE
@@ -32,12 +32,12 @@ class AppComoComponenteDeClase extends Component {
     //*Es útil para mostrar algo "por mientras", por ej., un loading mientras se recarga lo demás.
     componentDidMount() {
         //Para saber en que momento se van ejecutando las partes de este comp.
-        console.log("Ejecutando el componenteDidMount");
+        console.log("Ejecutando el componenteDidMount");        //! CUARTO, el componenteDidMount
 
         //Sólo para ver como funciona esto
         // setTimeout ejecuta lo que esta dentro a los 3 segundos (3000 del final) luego de ejecutarse componentDidMount()
-        setTimeout(() => {
-            //*Actualiza el estado
+        setTimeout(() => {                                      //! QUINTO. Esto se ejecuta por segunda vez, 
+            //*Actualiza el estado                              //! es una actualización y el render (2° y 3°) tambien irá por segunda vez
             this.setState({
                 session: true,
                 info: `Bienvenido ${user}`
@@ -50,8 +50,8 @@ class AppComoComponenteDeClase extends Component {
     //no se puede utilizar solo return, se debe usar el metodo render()
     render() {
         //logs para ver que va ocurriendo en todo este flujo
-        console.log("Ejecutando el render");
-        console.log(this.state.info);        
+        console.log("Ejecutando el render");        //! SEGUNDO se ejecuta el RENDER
+        console.log(this.state.info);               //! TERCERO sigue naturalmente ESTE
         return (
             <div>
                 <h1>Componente de Clase App</h1>
