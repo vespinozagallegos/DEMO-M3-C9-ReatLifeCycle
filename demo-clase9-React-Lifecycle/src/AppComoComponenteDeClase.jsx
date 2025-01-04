@@ -9,15 +9,35 @@ console.log(styles);
 //FORMA 1 ->
 //class AppComoComponenteDeClase extends React.Component {
 
+
+const user = "Víctor";
+
 //Forma 2
 class AppComoComponenteDeClase extends Component {
+    //Se reciben props //Se define el Estado //Se define todo lo inicial que necesita el componente para renderizar
+    constructor() {
+        //super no es necesario si no recibo props pero si se recomienda ponerlo siempre para evitar errores finales 
+        super();
+        //siempre es this.state. Es el componente de clase state. Siempre es un objeto.
+        this.state = {
+            session: false,
+            info: "No se ha cargado la info"
+        }
+        console.log("Ejecutando el constructor");        
+    }
 
-  return (
-    <div>
-
-    </div>
-    
-  );
+    //no se puede utilizar solo return, se debe usar el metodo render()
+    render() {
+        return (
+            <div>
+                <h1>Componente de Clase App</h1>
+                {/* muestra la informacion que esta en state(objeto). Se usa this por ser clase */}
+                <h2>{this.state.info}</h2>
+                {/* Luego se agregará una funcionalidad al botón */}
+                <button>Iniciar Sesión</button>
+            </div>
+        )
+    }
 }
 
 export default AppComoComponenteDeClase;
