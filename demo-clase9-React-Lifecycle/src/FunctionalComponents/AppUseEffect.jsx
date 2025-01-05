@@ -12,6 +12,7 @@ function AppUseEffect() {
         <>
             {
                 characters.map((character) => {
+                    // Se entrega character={character} para que le llegue la info a Card
                     return <Card key={character.id} character={character}/>
                 })
             }
