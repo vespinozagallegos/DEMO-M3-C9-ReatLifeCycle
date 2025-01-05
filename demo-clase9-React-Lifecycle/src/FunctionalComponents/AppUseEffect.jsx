@@ -8,6 +8,14 @@ console.log(styles);
 function AppUseEffect() {
     //Creación de Estado
     const [characters, setCharacters] = useState([]);
+    //Estado Detail
+    const [detail, setDetail] = useState(false);
+    //Estado id
+    const [id, setId] = useState(0);
+    console.log(detail);
+    console.log(id);
+    
+    
     
     //Recibe 2 params, un callbacñ y un array de dependencias
     //Llamará a una Api para traer la info que cargue el estado //Esa info es la que se mapea y renderiza mas abajo
