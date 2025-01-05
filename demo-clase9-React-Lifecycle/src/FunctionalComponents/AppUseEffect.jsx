@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './AppUseEffect.module.css'
+import Card from './Card'
 
 console.log(styles);
 
