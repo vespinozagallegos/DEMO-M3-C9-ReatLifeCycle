@@ -15,7 +15,13 @@ function AppUseEffect() {
     console.log(detail);
     console.log(id);
     
-    
+    //*Se crea la función del botón
+    // setea el valor del estado id, con el id que recibe por parámetro
+    // cambia el estado de detail. Esto indica que se hizo click en el botón del detalle y que lo está mostrando
+    const handleOnClick = (id) => {
+        setId(id);
+        setDetail(true);
+    }
     
     //Recibe 2 params, un callbacñ y un array de dependencias
     //Llamará a una Api para traer la info que cargue el estado //Esa info es la que se mapea y renderiza mas abajo
@@ -34,7 +40,8 @@ function AppUseEffect() {
             {
                 characters.map((character) => {
                     // Se entrega character={character} para que le llegue la info a Card
-                    return <Card key={character.id} character={character}/>
+                    // Se implementa la funcion handleOnClick
+                    return <Card key={character.id} character={character} handleOnClick={handleOnClick}/>
                 })
             }
         </>
