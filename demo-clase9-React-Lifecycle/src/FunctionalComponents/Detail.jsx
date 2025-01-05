@@ -1,8 +1,17 @@
 //* Este componente mostrará el detalle de un personaje como un MODAL
 import styles from './Detail.module.css'
+import { useState, useEffect } from 'react';
 
 //recibe una función para cerrar el Modal
 const Detail = ({ handleOnClose }) => {
+    //* Crear Estado
+    const [character, setCharacter] = useState({});
+
+    // 2 params, callback y array de dependencias
+    useEffect(() => {
+
+    }, []);
+    
     return(
         // div con el estilo que tendra el modal
         <div className={styles.modalContainer}>
