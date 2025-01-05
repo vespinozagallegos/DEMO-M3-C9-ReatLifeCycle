@@ -12,7 +12,7 @@ function AppUseEffect() {
         <>
             {
                 characters.map((character) => {
-                    return <Card />
+                    return <Card key={character.id}/>
                 })
             }
         </>
