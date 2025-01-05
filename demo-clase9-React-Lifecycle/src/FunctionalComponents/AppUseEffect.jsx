@@ -7,7 +7,12 @@ console.log(styles);
 //Recibe 2 params, un callbacñ y un array de dependencias
 //Llamará a una Api para traer la info que cargue el estado //Esa info es la que se mapea y renderiza mas abajo
 useEffect(() => {
-
+    //fetch es una promesa que llama a la API
+    fetch("https://hp-api.onrender.com/api/characters")
+        //método then para que funcione, se formatea la resp para poder manipularla (con JS)
+        .then((response) => response.json())
+        //*recibe la data y se cambia el estado, cargandolo con la info de la API
+        .then((data) => setCharacters(data))
 }, []);
 
 function AppUseEffect() {

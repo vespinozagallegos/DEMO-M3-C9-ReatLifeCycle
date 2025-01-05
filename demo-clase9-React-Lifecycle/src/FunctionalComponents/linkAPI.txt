@@ -1,2 +1,2 @@
 API DE characters
-hp-api.onrender.com/api/characters
+https://hp-api.onrender.com/api/characters
