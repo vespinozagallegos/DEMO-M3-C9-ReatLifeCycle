@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import styles from './AppUseEffect.module.css'
 import Card from './Card'
+import Detail from './Detail';
 
 console.log(styles);
 //se puede aplicar un slice para cortar el array y dejarlo en 20 x ej
@@ -50,6 +51,9 @@ function AppUseEffect() {
                     return <Card key={character.id} character={character} handleOnClick={handleOnClick}/>
                 })
             }
+            {/* renderizado condicional de Detail */}
+            {/* Si detail es true, renderiza al componente con la funcion handleOnClose como props */}
+            {detail && <Detail handleOnClose={handleOnClose} />}
         </>
     );
 }
