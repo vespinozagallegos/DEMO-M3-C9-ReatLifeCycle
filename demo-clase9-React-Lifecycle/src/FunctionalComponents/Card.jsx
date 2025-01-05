@@ -7,7 +7,7 @@ const Card = ({ character, handleOnClick }) => {
             <h2>{name}</h2>
             <h3>{house}</h3>
             {/* Se agrega la funcion del boton que viene de la props como handleOnClick */}
-            {/* Y como el botón muestra el detalle de un personaje se usa el id en la funcionBoton */}
+            {/* Y como el botón muestra el detalle de un personaje, se trae el id para usarlo en handleOnClick(id) */}
             <button onClick={() => handleOnClick(id)}>Ver Detalle</button>
         </div>
 
