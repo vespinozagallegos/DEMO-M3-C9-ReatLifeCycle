@@ -39,6 +39,8 @@ function AppUseEffect() {
             .then((response) => response.json())
             //*recibe la data y se cambia el estado, cargandolo con la info de la API
             .then((data) => setCharacters(data))
+        //! Callback que se ejecuta al desmontar componente(simil al willUnmount) para volver el id a cero
+        return () => { setId(0) }
     }, []);
 
     
