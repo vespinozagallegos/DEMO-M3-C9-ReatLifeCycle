@@ -6,7 +6,7 @@ const Detail = ({ handleOnClose }) => {
     return(
         // div con el estilo que tendra el modal
         <div className={styles.modalContainer}>
-            <button onClick={handleOnClose}>Cerrar</button>
+            <button className={styles.buttonDetail} onClick={handleOnClose}>Cerrar</button>
         </div>
 
     );
