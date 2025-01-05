@@ -16,11 +16,17 @@ function AppUseEffect() {
     console.log(id);
     
     //*Se crea la función del botón
-    // setea el valor del estado id, con el id que recibe por parámetro
-    // cambia el estado de detail. Esto indica que se hizo click en el botón del detalle y que lo está mostrando
     const handleOnClick = (id) => {
+        // setea el valor del estado id, con el id que recibe por parámetro
         setId(id);
+        // cambia el estado de detail. Esto indica que se hizo click en el botón del detalle y que lo está mostrando
         setDetail(true);
+    }
+
+    //función para CERRAR EL MODAL
+    const handleOnClose = () => {
+        //vuelve a setear el detail en false
+        setDetail(false);
     }
     
     //Recibe 2 params, un callbacñ y un array de dependencias
