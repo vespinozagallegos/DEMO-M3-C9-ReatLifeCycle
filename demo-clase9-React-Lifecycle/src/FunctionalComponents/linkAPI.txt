@@ -1,2 +1,5 @@
 API DE characters
 https://hp-api.onrender.com/api/characters
+
+link para un solo Character, se le debe sumar el ID 
+https://hp-api.onrender.com/api/character/ aqui va el id

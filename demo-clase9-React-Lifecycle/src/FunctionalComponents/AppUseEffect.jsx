@@ -53,7 +53,7 @@ function AppUseEffect() {
             }
             {/* renderizado condicional de Detail */}
             {/* Si detail es true, renderiza al componente con la funcion handleOnClose como props */}
-            {detail && <Detail handleOnClose={handleOnClose} />}
+            {detail && <Detail id={id} handleOnClose={handleOnClose} />}
         </>
     );
 }
