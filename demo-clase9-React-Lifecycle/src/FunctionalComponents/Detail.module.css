@@ -1,3 +1,15 @@
 .modalContainer {
-    
+    position: absolute; /*para que no se mueva*/
+    top: 0%;
+    right: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: darkkhaki;
+    border: 1px solid black;
+    box-shadow: 0 0 20px rgb(70 68 68); /*Sombra del contenedor, efecto superpuesto*/
 }
