@@ -1,0 +1,1 @@
+//* Este componente mostrará el detalle de un personaje como un MODAL
