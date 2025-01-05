@@ -3,7 +3,7 @@ import styles from './AppUseEffect.module.css'
 import Card from './Card'
 
 console.log(styles);
-
+//se puede aplicar un slice para cortar el array y dejarlo en 20 x ej
 
 function AppUseEffect() {
     //Creación de Estado
