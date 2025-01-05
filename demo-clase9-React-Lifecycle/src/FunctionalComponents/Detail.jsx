@@ -24,6 +24,10 @@ const Detail = ({ id, handleOnClose }) => {
     return(
         // div con el estilo que tendra el modal
         <div className={styles.modalContainer}>
+            {/* Se eligen las props a renderizar, serán solo 2 */}
+            <h2>{character.name}</h2>   {/*si se llegase a romper se le agrega un ? entre character y el punto*/}
+            <img src={character.image} /> {/*se le puede agregar el alt pero nose pa que es alt={character.name}*/}
+
             <button className={styles.buttonDetail} onClick={handleOnClose}>Cerrar</button>
         </div>
 
