@@ -1,5 +1,3 @@
-ACLARACIÓN: TODOS LOS ARCHIVOS sueltos AQUÍ SON DE COMPONENTES DE CLASE
-
 Método ComponentDidMount.
 AppComponentDidMount Es una forma de trabajar con el Método ComponentDidMount().
 ComponentDidMount:Es una función que se ejecuta una sola vez cuando se carga el componente que sería
