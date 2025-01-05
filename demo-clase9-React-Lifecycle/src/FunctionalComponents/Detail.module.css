@@ -1,14 +1,15 @@
 .modalContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     position: absolute; /*para que no se mueva*/
     top: 30%;
-    left: 20%;
+    left: 31%;
     border-radius: 1rem;
-    width: 50%;
+    width: 30%;
     padding: 50px;
     background-color: darkkhaki;
     box-shadow: 0 0 20px rgb(70 68 68); /*Sombra del contenedor, efecto superpuesto*/
-    display: flex;
-    justify-content: center;
 }
 
 .buttonDetail {
@@ -16,4 +17,19 @@
     border-style: none;
     padding: 0.5rem;
     border-radius: 0.5rem;
+    margin-top: 30px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.img {
+    width: 250px;
+    border-radius: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    /* display: flex;
+    justify-content: center; */
 }
